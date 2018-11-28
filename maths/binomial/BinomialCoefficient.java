@@ -1,4 +1,5 @@
-class BinomialCoefficient { 
+class BinomialCoefficient
+{
 
     static int binomialCoeff(int n, int k)  
     {
