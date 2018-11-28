@@ -15,3 +15,16 @@ Exemple : Dans une promotion nous avons 55 étudiants, on souhaite sélectionner
 
 ## Formules mathématiques
 Nous pouvons utiliser plusieurs formules, la plus connue qui fait intervenir des factorielles. Pour des raisons de performances, nous pouvons utiliser la propriété récursive des coefficients binomiaux d'entiers avec la relation de Pascal qui lie ces coefficients.
+
+## Algorithme
+```
+# Paramètres n,k entiers naturels.
+# Condition sur paramètres: k > n
+
+binomialCoeff(n, k)
+    si (k = 0 ou k = n) {
+        retourner 1
+    }
+
+    retourner binomialCoeff(n-1, k-1) + binomialCoeff(n-1, k)
+```
